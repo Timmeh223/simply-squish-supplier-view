@@ -1,0 +1,9 @@
+.video-section.squish-carousel{width:100%;min-width:0;text-align:center;overflow:hidden;padding:42px 24px}
+.video-section.squish-carousel .video-grid{display:flex;width:100%;max-width:1004px;margin:0 auto;gap:24px;scroll-snap-type:x mandatory;align-items:flex-start;overflow-x:auto;padding:12px 4px 20px;box-sizing:border-box}
+.video-section.squish-carousel .video-grid .video-card{flex:0 0 180px;width:180px;margin:0;scroll-snap-align:start;min-width:0}
+.video-section.squish-carousel .clip-inline{width:100%;aspect-ratio:9/16;border-radius:18px;overflow:hidden}
+.video-section.squish-carousel .clip-inline video{display:block;width:100%;height:100%;object-fit:cover;background:#ffe3ed}
+.video-section.squish-carousel .video-controls{display:flex;justify-content:center;align-items:center;gap:12px;margin:20px auto 12px}
+.video-section.squish-carousel .video-controls button{border:1px solid #ffffffb3;border-radius:24px;background:#fff9fbcc;padding:8px 18px;min-height:44px;width:auto;height:auto;font-size:16px;line-height:1.3}
+.video-section.squish-carousel .video-rail{margin-left:auto;margin-right:auto;max-width:1004px}
+@media(max-width:700px){.video-section.squish-carousel{padding:34px 18px}.video-section.squish-carousel .video-grid{gap:14px}.video-section.squish-carousel .video-grid .video-card{flex-basis:min(52vw,190px);width:min(52vw,190px)}.squish-carousel h2{font-size:clamp(1.8rem,8vw,2.6rem)}}

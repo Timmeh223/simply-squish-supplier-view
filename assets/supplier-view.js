@@ -1,0 +1,6 @@
+(()=>{
+const originalFetch=window.fetch.bind(window);window.fetch=(url,options)=>{if(String(url).includes('/api/'))return Promise.resolve(new Response(JSON.stringify({items:[],total:0,count:0,currency:'USD',checkoutEnabled:false,products:[]}),{status:200,headers:{'Content-Type':'application/json'}}));return originalFetch(url,options)};
+document.addEventListener('submit',e=>{e.preventDefault();e.stopImmediatePropagation()},true);
+document.addEventListener('click',e=>{if(e.target.closest('[data-add],[data-purchase],[data-open="bag-panel"],button[type="submit"],a[href^="mailto:"],a[href^="tel:"]')){e.preventDefault();e.stopImmediatePropagation()}},true);
+document.addEventListener('DOMContentLoaded',()=>{const note=document.createElement('div');note.textContent='Supplier viewing copy · Product reference only · Orders and forms are disabled';note.style.cssText='background:#fff4d9;color:#35252b;text-align:center;padding:10px 16px;font:600 13px/1.4 system-ui';document.body.prepend(note);document.querySelectorAll('[data-add],[data-purchase]').forEach(b=>{b.textContent='Product reference';b.setAttribute('aria-disabled','true')});document.querySelectorAll('form').forEach(f=>f.querySelectorAll('input,button,textarea,select').forEach(e=>e.disabled=true));});
+})();

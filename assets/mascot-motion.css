@@ -1,0 +1,62 @@
+/* Home trust-card mascot movements. Each role has one quiet, purposeful beat;
+   they deliberately do not share the old all-card floating loop. */
+.mission-grid article:nth-child(1) img{
+  animation:peanut-wave-hello 4.8s ease-in-out infinite;
+  transform-origin:50% 82%;
+}
+
+.mission-grid article:nth-child(2) img{
+  animation:peanut-star-hug 5.4s cubic-bezier(.45,0,.25,1) infinite;
+  transform-origin:50% 60%;
+}
+
+.mission-grid article:nth-child(3) img{
+  animation:peanut-parcel-step 5.1s ease-in-out infinite;
+  transform-origin:52% 85%;
+}
+
+.mission-grid article:nth-child(4) img{
+  animation:peanut-friendly-greeting 4.6s ease-in-out infinite;
+  transform-origin:48% 84%;
+}
+
+@keyframes peanut-wave-hello{
+  0%,44%,100%{transform:rotate(-2deg) translateY(0)}
+  52%{transform:rotate(3deg) translateY(-3px)}
+  60%{transform:rotate(-1deg) translateY(-1px)}
+  68%{transform:rotate(3deg) translateY(-3px)}
+}
+
+@keyframes peanut-star-hug{
+  0%,42%,100%{transform:scale(1) rotate(0)}
+  52%{transform:scale(.965,1.035) rotate(-1.5deg)}
+  62%{transform:scale(1.025,.98) rotate(1deg)}
+}
+
+@keyframes peanut-parcel-step{
+  0%,38%,100%{transform:translate(0,0) rotate(0)}
+  49%{transform:translate(5px,-4px) rotate(2deg)}
+  60%{transform:translate(1px,-1px) rotate(.5deg)}
+}
+
+@keyframes peanut-friendly-greeting{
+  0%,40%,100%{transform:rotate(-1deg) translateY(0)}
+  50%{transform:rotate(3.5deg) translateY(-3px)}
+  60%{transform:rotate(-2deg) translateY(-1px)}
+  70%{transform:rotate(3deg) translateY(-3px)}
+}
+
+@media(max-width:700px){
+  .mission-grid article:nth-child(1) img,.mission-grid article:nth-child(2) img,
+  .mission-grid article:nth-child(3) img,.mission-grid article:nth-child(4) img{
+    max-width:100%;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .mission-grid article:nth-child(1) img,.mission-grid article:nth-child(2) img,
+  .mission-grid article:nth-child(3) img,.mission-grid article:nth-child(4) img{
+    animation:none;
+    transform:none;
+  }
+}

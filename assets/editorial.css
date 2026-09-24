@@ -1,0 +1,81 @@
+/* Shared, scoped editorial treatment; product controls and video layouts stay unchanged. */
+.community-closeup.section{padding-top:30px;padding-bottom:26px}
+.community-closeup h2{margin-bottom:20px}
+.squeeze-story.visual-science{grid-template-columns:minmax(0,1.35fr) minmax(0,.85fr);gap:28px;margin:0 auto 24px;padding:28px;background:#fff0f5;border:1px solid var(--line);border-radius:24px}
+.science-scene{margin:0;min-width:0;align-self:center}
+.science-scene>img{width:100%;height:auto;border-radius:18px;aspect-ratio:1672/941;object-fit:contain}
+.science-scene figcaption{font-size:13px;line-height:1.5;margin-top:9px;color:#654553}
+.science-copy{min-width:0}
+.science-copy h2{font-size:clamp(1.8rem,3vw,2.7rem);margin-bottom:16px}
+.science-copy>p:not(.eyebrow){font-size:18px;line-height:1.55}
+.hands-moment{display:flex;align-items:center;gap:16px;margin-top:20px}
+.hands-moment>img{width:92px;height:92px;flex:none;object-fit:contain;border-radius:18px}
+.hands-moment h3{font-size:18px;margin:0 0 7px;letter-spacing:-.01em}
+.hands-moment p{font-size:15px;line-height:1.5;margin:0}
+.science-evidence{grid-column:1/-1;padding:18px 20px;background:#fff9fb;border-radius:16px}
+.science-evidence>p{font-size:15px;margin:0 0 10px;line-height:1.6}
+.science-evidence details{padding:0;border:0}
+.science-evidence summary{font-size:15px;gap:16px;align-items:center}
+.science-evidence details p{max-width:85ch;font-size:15px;line-height:1.6;margin:12px 0}
+.science-evidence a{font-size:15px;font-weight:700;color:var(--berry);display:inline-block;padding:5px 0}
+.visual-science+.reviews{padding-top:30px}
+.journal-index{max-width:1260px;padding-top:40px}
+.editorial-heading{max-width:800px;margin:0 auto 30px;text-align:center}
+.editorial-heading h1{font-size:clamp(2.2rem,4.5vw,4rem);margin-bottom:20px;color:#59122d}
+.editorial-heading>p:not(.eyebrow){font-size:19px;line-height:1.6;max-width:60ch;margin:0 auto}
+.journal-index .journal-grid{align-items:start;gap:24px}
+.journal-index .journal-card{padding:0;overflow:hidden;border-radius:22px;background:white}
+.journal-card-photo{display:block;background:#ffeaf2}
+.journal-card-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:contain}
+.journal-card>div{padding:24px}
+.journal-card h2{font-size:27px;line-height:1.12;margin:0 0 16px}
+.journal-card h2 a{text-decoration:none}
+.journal-card .eyebrow{font-size:12px;margin-bottom:12px}
+.journal-card p:not(.eyebrow){font-size:16px;line-height:1.6}
+.journal-read{font-size:16px;font-weight:750;color:var(--berry);display:inline-block;padding:8px 0}
+.journal-article{max-width:1160px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:32px;align-items:center;padding-top:40px}
+.journal-article>.editorial-heading{text-align:left;margin:0}
+.editorial-lead{margin:0;min-width:0}
+.editorial-lead img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;border-radius:26px;background:#ffe8f0}
+.editorial-lead figcaption,.editorial-photo figcaption{font-size:13px;line-height:1.5;color:#654553;margin-top:9px}
+.editorial-body{grid-column:1/-1;min-width:0}
+.editorial-step{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:36px;align-items:center;margin-top:32px;padding:28px;border:1px solid var(--line);border-radius:24px;background:#fff}
+.editorial-step:nth-child(even){background:#fff0f5}
+.editorial-photo{margin:0;min-width:0}
+.editorial-photo img{width:100%;height:auto;aspect-ratio:1;object-fit:contain;border-radius:18px}
+.editorial-step h2,.editorial-note h2,.editorial-mix h2{font-size:clamp(1.65rem,2.8vw,2.3rem);margin:12px 0 18px}
+.editorial-body p{font-size:18px;line-height:1.65}
+.editorial-body a:not(.ss-button){font-weight:700;color:var(--berry);display:inline-block;padding:6px 0}
+.editorial-number{display:inline-grid;place-items:center;min-width:42px;height:42px;padding:0 8px;border-radius:50%;background:var(--berry);color:white;font-size:17px;font-weight:800}
+.editorial-note,.editorial-mix{padding:30px;background:#ffe8f0;border-radius:24px;margin-top:32px}
+.editorial-note p{max-width:80ch}
+.editorial-product-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:24px}
+.editorial-product-row a{text-align:center;text-decoration:none}
+.editorial-product-row img{width:100%;height:auto;aspect-ratio:1;object-fit:contain;border-radius:18px;margin-bottom:10px}
+.editorial-product-row span{font-size:16px;line-height:1.4;display:block}
+.editorial-end{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:20px;margin-top:32px}
+@media(max-width:700px){
+ .community-closeup.section{padding-top:24px;padding-bottom:22px}
+ .squeeze-story.visual-science{grid-template-columns:1fr;gap:20px;margin:0 18px 22px;padding:18px;border-radius:20px}
+ .science-copy>p:not(.eyebrow){font-size:17px}
+ .hands-moment{gap:12px}
+ .hands-moment>img{width:76px;height:76px}
+ .science-evidence{padding:16px}
+ .science-evidence summary{font-size:15px}
+ .visual-science+.reviews{padding-top:26px}
+ .journal-index .journal-grid{grid-template-columns:1fr}
+ .journal-index,.journal-article{padding-top:30px}
+ .editorial-heading>p:not(.eyebrow){font-size:18px}
+ .journal-article{grid-template-columns:1fr;gap:24px}
+ .journal-article>.editorial-heading{text-align:left}
+ .editorial-lead img{max-height:390px}
+ .editorial-step{grid-template-columns:1fr;gap:20px;padding:20px;margin-top:24px}
+ .editorial-photo{max-width:290px;width:100%;justify-self:center}
+ .editorial-body p{font-size:17px}
+ .editorial-note,.editorial-mix{padding:22px;margin-top:24px}
+ .editorial-product-row{gap:10px}
+ .editorial-product-row span{font-size:14px;overflow-wrap:anywhere}
+ .editorial-end{align-items:stretch;flex-direction:column;text-align:center}
+}
+/* Short, general play ideas. These are not health or treatment claims. */
+.visual-science .play-benefits{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}.visual-science .play-benefits article{padding:15px;border:1px solid #eed3df;border-radius:16px;background:#fffafd}.visual-science .play-benefits span{display:grid;place-items:center;width:30px;height:30px;margin-bottom:8px;border-radius:50%;background:#ffe2ec;color:#b3124d;font-weight:900}.visual-science .play-benefits h3{margin:0 0 5px;font-size:15px}.visual-science .play-benefits p{margin:0;font-size:14px;line-height:1.4}.visual-science .research-link{margin:12px 0 0;font-size:14px;font-weight:700}@media(max-width:520px){.visual-science .play-benefits{grid-template-columns:1fr 1fr;gap:8px}.visual-science .play-benefits article{padding:12px}.visual-science .play-benefits p{font-size:13px}}
